@@ -1,0 +1,15 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+node_modules/
+dist/
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+coverage/
+backend/secrets/
+infra/nginx/certs/*.pem
+.DS_Store
