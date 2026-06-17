@@ -22,12 +22,12 @@ export default function Login() {
   }
 
   return (
-    <Box minHeight="100vh" display="flex" alignItems="center" justifyContent="center" bgcolor="#eef5ff">
+    <Box sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#eef5ff' }}>
       <Card sx={{ width: 420 }}>
         <CardContent>
           <Typography variant="h5" gutterBottom>Smart Seat Login</Typography>
           {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
-          <Box component="form" onSubmit={submit} display="grid" gap={2}>
+          <Box component="form" onSubmit={submit} sx={{ display: 'grid', gap: 2 }}>
             <TextField label="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
             <TextField label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             <Button type="submit" variant="contained">Login</Button>

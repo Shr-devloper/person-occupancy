@@ -9,11 +9,11 @@ import Analytics from './pages/Analytics';
 import Notifications from './pages/Notifications';
 import Profile from './pages/Profile';
 
-function PrivateRoute({ children }: { children: JSX.Element }) {
+function PrivateRoute({ children }: { children: React.ReactElement }) {
   return localStorage.getItem('token') ? children : <Navigate to="/login" replace />;
 }
 
-function Shell({ children }: { children: JSX.Element }) {
+function Shell({ children }: { children: React.ReactElement }) {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.removeItem('token');
