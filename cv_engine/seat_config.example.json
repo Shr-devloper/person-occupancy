@@ -1,0 +1,10 @@
+{
+  "camera_id": 1,
+  "seats": [
+    {
+      "seat_id": 1,
+      "seat_name": "Cabin A Chair",
+      "region": {"x1": 220, "y1": 160, "x2": 520, "y2": 460}
+    }
+  ]
+}

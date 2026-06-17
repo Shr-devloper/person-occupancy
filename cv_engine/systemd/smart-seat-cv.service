@@ -1,0 +1,19 @@
+[Unit]
+Description=Smart Seat Occupancy CV Engine
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/smart-seat/cv_engine
+EnvironmentFile=/opt/smart-seat/cv_engine/.env
+ExecStart=/opt/smart-seat/cv_engine/.venv/bin/python -m app.main
+Restart=always
+RestartSec=5
+User=pi
+Group=pi
+StandardOutput=append:/var/log/smart-seat-cv.log
+StandardError=append:/var/log/smart-seat-cv-error.log
+
+[Install]
+WantedBy=multi-user.target

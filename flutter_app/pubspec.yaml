@@ -1,0 +1,25 @@
+name: smart_seat_mobile
+version: 1.0.0+1
+publish_to: 'none'
+description: Smart Seat Occupancy Monitoring mobile app.
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: latest
+  dio: latest
+  firebase_core: latest
+  firebase_messaging: latest
+  fl_chart: latest
+  shared_preferences: latest
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: latest
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+alembic
+pydantic-settings
+python-jose[cryptography]
+bcrypt
+python-multipart
+email-validator
+firebase-admin
+httpx
+pytest
+pytest-asyncio

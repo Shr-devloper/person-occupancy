@@ -1,0 +1,7 @@
+opencv-python
+ultralytics
+pydantic
+pydantic-settings
+PyYAML
+requests
+numpy
